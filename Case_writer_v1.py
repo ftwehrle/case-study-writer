@@ -79,7 +79,7 @@ with instructor_tab:
     st.header("Instructor Setup")
     st.markdown("First, please provide the general details for the case study you want to create.")
     with st.form(key="instructor_form"):
-        institution = st.text_input("Name of the institution", "Harvard Business School")
+        institution = st.text_input("Name of the institution", "Test Business School")
         course_title = st.text_input("Course Title", "Strategic Management")
         discipline = st.text_input("Discipline", "Business Strategy")
         target_audience = st.text_input("Target Audience", "MBA Students")
