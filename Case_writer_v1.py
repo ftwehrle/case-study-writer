@@ -1,3 +1,5 @@
+# Disclaimer: Code written by Gemini 2.5 Pro
+
 import streamlit as st
 import google.generativeai as genai
 import time
