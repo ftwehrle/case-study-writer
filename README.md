@@ -22,6 +22,7 @@ This guide will walk you through the steps to deploy your own live, web-accessib
 
 * A **GitHub** account.  
 * A **Google Cloud** account (for API keys).
+* * A **Streamlit** account.
 
 ### **Step 1: Get the Project Code on GitHub**
 
