@@ -226,7 +226,16 @@ Your writing style: When writing case studies for {instructor['target_audience']
                 st.success("Full case study generation complete!")
                 st.balloons()
                 
-                st.session_state.final_case_study = "\n\n---\n\n".join(written_sections)
+                # --- STEP 11: Collate the final case study with Title and Disclaimer ---
+                # Create the title and disclaimer
+                title_and_disclaimer = f"# Case Study: {instructor['case_topic']} for {company_name}\n\n"
+                title_and_disclaimer += f"**_Disclaimer: This case study was written by {MODEL_NAME} and may contain hallucinations._**\n\n---\n\n"
+
+                # Join the main body of the case study
+                case_body = "\n\n---\n\n".join(written_sections)
+
+                # Combine everything into the final text
+                st.session_state.final_case_study = title_and_disclaimer + case_body
 
 # --- Display Generation Results ---
 if st.session_state.generation_results:
