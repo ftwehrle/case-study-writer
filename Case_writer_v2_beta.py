@@ -41,7 +41,9 @@ GEMINI_API_KEY, SEARCH_API_KEY, SEARCH_ENGINE_ID = load_credentials()
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-2.5-flash')
+# This variable holds the model name for use in the disclaimer
+MODEL_NAME = 'gemini-2.5-flash'
+model = genai.GenerativeModel(MODEL_NAME)
 
 # --- Session State Initialization ---
 if 'instructor_data' not in st.session_state:
