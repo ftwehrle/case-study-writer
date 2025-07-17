@@ -4,6 +4,8 @@ This is a prototype of an advanced web application that uses a multi-step, agent
 
 The key innovation of this tool is its ability to perform its own targeted web searches to gather real-time, factual information, which it then uses to ground the case study, significantly reducing the risk of AI "hallucinations" and ensuring the final output is credible and well-sourced.
 
+The script and documentation are written with Gemini 2.5 Pro.
+
 ## **Key Features**
 
 * **Instructor & Student Interfaces:** A simple two-tab interface for instructors to define the case study parameters and for students to specify the company and role.  
